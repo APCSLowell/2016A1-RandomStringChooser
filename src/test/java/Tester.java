@@ -13,35 +13,33 @@ public class Tester {
 
    @Test
    public void partA () {
-      int [][] pixels1 = {{255,184,178,84,129},
-                    {84,255,255,130,84},
-                    {78, 255, 0,0, 78},
-                    {84,130,255,130,84}};
-      GrayImage image = new GrayImage(pixels1);
-      int result = image.countWhitePixels();
-      assertEquals("Test failed: Expected output 5 from countWhitePixels() but " + result + " was returned",5,image.countWhitePixels());
+      List<String> test = new ArrayList<>();
+	   String[] wordArray = {"wheels", "on", "the", "bus"};
+	   RandomStringChooser sChooser = new RandomStringChooser(wordArray);
+	   for (int k = 0; k < 6; k++)
+	   {
+			test.add(sChooser.getNext());
+	   }
+	   assertEquals(6,test.size());
+	   assertEquals("NONE",test.get(4));
+	   assertEquals("NONE",test.get(5));
+	   assertEquals(true,test.contains("wheels"));
+	   assertEquals(true,test.contains("on"));
+	   assertEquals(true,test.contains("the"));
+	   assertEquals(true,test.contains("bus"));
    }
 
    @Test
    public void partB(){
-      int[][] pixels2 = {
-      {221, 184, 178,  84, 135},
-      { 84, 255, 255, 130,  84},
-      { 78, 255,   0,   0,  78},
-      { 84, 130, 255, 130,  84}
-    };
-    
-    int[][] result = {
-      {221, 184, 100,  84, 135},
-      { 0, 125, 171, 130 ,  84},
-      { 78, 255,   0,   0,  78},
-      { 84, 130, 255, 130,  84}
-    };
-    
-    GrayImage image = new GrayImage(pixels2);
-    GrayImage afterImage = new GrayImage(result);
-    image.processImage();
-    assertEquals(afterImage.toString(),image.toString() );
+      RandomLetterChooser letterChooser = new RandomLetterChooser("cat");
+      String test = "";
+      for(int i = 0; i < 4; i++)
+        test+=letterChooser.getNext();
+      assertEquals(7,test.length());
+      assertEquals("NONE",test.substring(3));
+      assertEquals(true,test.contains("c"));
+      assertEquals(true,test.contains("a"));
+      assertEquals(true,test.contains("t"));
    }
 
 
