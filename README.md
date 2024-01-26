@@ -1,32 +1,19 @@
-# 2012  AP Computer Science A FRQ #4 GrayImage
+# 2016  AP Computer Science A FRQ #1 RandomStringChooser
 
-Instructions: https://secure-media.collegeboard.org/apc/ap_frq_computerscience_12.pdf
+Instructions: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap16_frq_computer_science_a.pdf
 
 Quick Reference Guide:  [https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf) 
 
-The correct answer outputs should be as follows.
+Note: Since the selections are random, your outputs will vary. 
+
+ 
+
+The expected output should look something like this.
 
 Part A
 
- 
-
-```
-5
-```
+bus on the wheels NONE NONE 
 
 Part B
 
- 
-
-```
- 221 184 178  84 135
-  84 255 255 130  84
-  78 255   0   0  78
-  84 130 255 130  84
-
-
- 221 184 100  84 135
-   0 125 171 130  84
-  78 255   0   0  78
-  84 130 255 130  84
-```
+actNONE
